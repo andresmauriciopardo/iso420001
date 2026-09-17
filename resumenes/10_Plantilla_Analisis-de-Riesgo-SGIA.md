@@ -15,7 +15,7 @@ documentos_relacionados_en_corpus: [11_Plantilla_Actividad2_FODA-vs-Riesgo_Conte
 
 ## 1. Resumen ejecutivo
 
-"Analisis de Riesgo SGIA v.03.xls" es una plantilla de hoja de cálculo para ejecutar la **evaluación de riesgos de un Sistema de Gestión de Inteligencia Artificial (SGIA)**, el proceso que ISO/IEC 42001 exige en las cláusulas 6.1.2 (evaluación de riesgos de IA) y 8.2 (ejecución operativa de esa evaluación), y cuyo resultado alimenta el tratamiento de riesgos de 6.1.3 y la evaluación de impacto de 6.1.4. La plantilla parte de un **inventario de activos de IA** (hoja "Activos"), valora cada activo en siete dimensiones de **sensibilidad** propias de la IA (ética e inclusión, transparencia y explicabilidad, responsabilidad, seguridad y robustez, privacidad, beneficio social y supervisión humana), estima el **impacto al negocio** en cinco categorías (legal/sancionador, reputacional, civil, operativo e impacto en la sociedad), caracteriza la **vulnerabilidad** (severidad y exposición) y la **amenaza** (agente, capacidad y motivación), asigna una **probabilidad** y calcula un **riesgo total** multiplicativo cuyo valor máximo es 3.375. Ese valor se clasifica en BAJO, MEDIO o ALTO mediante umbrales, se compara con criterios de aceptación y se recalcula como **riesgo residual** tras describir los controles existentes. Un catálogo de **fuentes de riesgo (FR1-1 a FR5-2)** organizado por las cinco fases del ciclo de vida de la IA conecta la plantilla con la lógica de ISO/IEC 23894. Las hojas "Mapa Riesgos" y "Dashboard" consolidan los resultados para la dirección. El caso de ejemplo es una **empresa de telecomunicaciones** con dos activos: una IA de perfilamiento y marketing predictivo y una plataforma de Big Data de geolocalización GPS. La plantilla importa porque materializa, en una herramienta usable, el vínculo entre activos, principios de IA responsable, riesgo y controles del Anexo A.
+"Analisis de Riesgo SGIA v.03.xls" es una plantilla de hoja de cálculo para ejecutar la **evaluación de riesgos de un Sistema de Gestión de Inteligencia Artificial (SGIA)**, el proceso que ISO/IEC 42001 exige en 6.1.2 (evaluación de riesgos de IA) y 8.2 (ejecución operativa), y cuyo resultado alimenta el tratamiento de 6.1.3. Parte de un **inventario de activos de IA** (hoja "Activos"), valora cada activo en siete dimensiones de **sensibilidad** propias de la IA (ética e inclusión, transparencia y explicabilidad, responsabilidad, seguridad y robustez, privacidad, beneficio social y supervisión humana), estima el **impacto al negocio** en cinco categorías (legal, reputacional, civil, operativo, sociedad), caracteriza la **vulnerabilidad** (severidad y exposición) y la **amenaza** (agente, capacidad y motivación), asigna una **probabilidad** y calcula un **riesgo total** multiplicativo cuyo máximo es 3.375, clasificado en BAJO, MEDIO o ALTO mediante umbrales y recalculado como **riesgo residual** tras describir los controles existentes. Un catálogo de **fuentes de riesgo (FR1-1 a FR5-2)** por fases del ciclo de vida de la IA conecta la plantilla con ISO/IEC 23894. Las hojas "Mapa Riesgos" y "Dashboard" consolidan los resultados para la dirección. El caso de ejemplo es una **telco** con dos activos: una IA de perfilamiento y marketing predictivo y una plataforma de Big Data de geolocalización GPS. La plantilla importa porque materializa el vínculo entre activos, principios de IA responsable, riesgo y controles del Anexo A.
 
 ## 2. Identificación y contexto del documento
 
@@ -39,7 +39,7 @@ documentos_relacionados_en_corpus: [11_Plantilla_Actividad2_FODA-vs-Riesgo_Conte
 
 ### 4.1 Hoja "Información"
 
-Portada con seis campos en blanco (A8–A20): **Empresa**, **Dirección**, **Desarrollado por**, **Fecha de Aprobación**, **Versión** y **Fecha de Próxima / Revisión**. Encabezado "EVALUACION DE RIESGO". Sirve para identificar la organización y para dejar evidencia de aprobación y ciclo de revisión, requisito de información documentada (cláusula 7.5) y de revisión planificada de la evaluación (6.1.2 exige repetir la evaluación a intervalos planificados o ante cambios significativos).
+Portada con seis campos en blanco (A8–A20): **Empresa**, **Dirección**, **Desarrollado por**, **Fecha de Aprobación**, **Versión** y **Fecha de Próxima / Revisión**, bajo el encabezado "EVALUACION DE RIESGO". Deja evidencia de aprobación y ciclo de revisión (información documentada, 7.5; repetición planificada de la evaluación, 8.2).
 
 ### 4.2 Hoja "Activos"
 
@@ -53,10 +53,7 @@ Inventario de activos del SGIA. Columnas (fila 2):
 | E | Categoría del Activo | Algoritmo/ Modelo | Infraestructura tecnológica |
 | F | Ubicación del activo | Servidor de información | Nube pública corporativa |
 
-El prefijo "CIMA" no se explica en el archivo. Las columnas I–J contienen las **listas de referencia** para los desplegables:
-
-- **Tipo de activo**: *Primario* (Información, Proceso, Algoritmo/Modelo, Datos) y *Secundario* (Software y Aplicaciones, Hardware/Infraestructura técnica, Personal, Infraestructura física, Infraestructura tecnológica). Esta división primario/soporte sigue la lógica clásica de ISO/IEC 27005: los activos primarios son los que tienen valor de negocio (datos, modelos, procesos) y los secundarios son los que los soportan.
-- El caso es una **telco**: perfilamiento de abonados para marketing dirigido y analítica de ubicación GPS de dispositivos móviles, ambos con alta carga de datos personales.
+El prefijo "CIMA" no se explica en el archivo. Las columnas I–J contienen la **lista de referencia** de tipos de activo: *Primario* (Información, Proceso, Algoritmo/Modelo, Datos) y *Secundario* (Software y Aplicaciones, Hardware/Infraestructura técnica, Personal, Infraestructura física, Infraestructura tecnológica), división que sigue la lógica de activos primarios y de soporte de ISO/IEC 27005. Ambos activos del caso (telco) procesan datos personales de abonados a gran escala.
 
 ### 4.3 Hoja "Tabla de Riesgos"
 
@@ -86,9 +83,9 @@ Dimensiones (fila 7) y significado de los extremos 1 y 5 (paráfrasis de las des
 | Beneficio Social (B) | Impacto limitado a un proceso administrativo interno | Puede socavar procesos democráticos o el tejido socioeconómico |
 | Supervisión Humana (S) | Control humano total: aprobación manual por ciclo (human-in-the-loop) | Autonomía total sin mecanismo viable de anulación humana |
 
-Los niveles intermedios introducen conceptos útiles para el examen: nivel 3 de Transparencia = modelos que requieren explicabilidad post-hoc (SHAP, LIME); nivel 3 de Supervisión = *human-on-the-loop*; nivel 4 = *human-out-of-the-loop* con solo auditoría forense posterior; nivel 4 de Seguridad = propenso a *prompt injection* y envenenamiento de datos; nivel 4 de Privacidad = riesgo de exfiltración por ataques de inversión de modelo.
+Niveles intermedios relevantes: Transparencia 3 = modelos que requieren explicabilidad post-hoc (SHAP, LIME); Supervisión 3 = *human-on-the-loop* y 4 = *human-out-of-the-loop* con solo auditoría posterior; Seguridad 4 = propenso a *prompt injection* y envenenamiento de datos; Privacidad 4 = riesgo de exfiltración por inversión de modelo.
 
-En la tabla de riesgos (fila 17), **Total1 (col. O) = suma de las siete dimensiones** (rango teórico 7–35), **Valor1 (P)** es el nivel textual y **Valor2 (Q)** el nivel numérico 1–3 que entra en la fórmula del riesgo como factor "Sensibilidad" (en realidad, la fórmula usa Total1, ver 4.3.6).
+En la tabla de riesgos (fila 17), **Total1 (col. O) = suma de las siete dimensiones** (7–35), **Valor1 (P)** es el nivel textual y **Valor2 (Q)** un nivel 1–3; la fórmula del riesgo usa Total1 como factor "Sensibilidad" (ver 4.3.6).
 
 #### 4.3.2 Evaluación de impactos al negocio (columnas S–Y, filas 8–13)
 
@@ -96,29 +93,29 @@ Escala de **1 a 3** (Bajo, Medio, Alto) en **cinco categorías**, cada una con d
 
 | Categoría | 1 Bajo | 2 Medio | 3 Alto |
 |---|---|---|---|
-| Legal / Sancionador | Infracciones administrativas menores (ej.: amonestación de la ANPD por no actualizar el registro de un modelo) | Fiscalización formal, multas moderadas (ej.: sanción por no tener Política de Gobernanza de IA) | Multas máximas sobre facturación global, suspensión u orden de destrucción del modelo (ej.: apagar una red neuronal de scoring crediticio discriminatoria) |
-| Reputacional | Quejas aisladas sin eco mediático | Cobertura negativa local; deterioro temporal de marca | Crisis internacional, caída en bolsa, boicot (ej.: software de reclutamiento que descartaba por origen étnico) |
-| Civil (Demandas) | Reclamos individuales resueltos por atención al cliente (ej.: reembolso de 50 USD por error de tarifa) | Litigios individuales o arbitrajes | Demandas colectivas (class actions) multimillonarias (ej.: filtración de historiales médicos por inversión de modelo en un LLM de salud) |
-| Operativo | Interrupción menor de sistemas no esenciales | Degradación de servicios clave por horas | Paralización total (ej.: ransomware sobre los servidores de ML de una telco) |
-| Impacto en la Sociedad | Inconvenientes temporales a un grupo reducido | Afectación moderada del bienestar o cohesión de un sector | Daños masivos e irreversibles a la democracia, salud o medio ambiente (ej.: deepfakes electorales masivos) |
+| Legal / Sancionador | Infracciones administrativas menores (ej.: amonestación de la ANPD por no actualizar el registro de un modelo) | Fiscalización formal, multas moderadas (ej.: sanción por no tener Política de Gobernanza de IA) | Multas máximas, suspensión u orden de destrucción del modelo (ej.: red neuronal de scoring crediticio discriminatoria) |
+| Reputacional | Quejas aisladas sin eco mediático | Cobertura negativa local | Crisis internacional, caída en bolsa, boicot (ej.: reclutamiento que descartaba por origen étnico) |
+| Civil (Demandas) | Reclamos individuales (ej.: reembolso de 50 USD por error de tarifa) | Litigios individuales o arbitrajes | Demandas colectivas multimillonarias (ej.: filtración de historiales médicos por inversión de modelo en un LLM) |
+| Operativo | Interrupción menor de sistemas no esenciales | Degradación de servicios clave por horas | Paralización total (ej.: ransomware sobre servidores de ML de una telco) |
+| Impacto en la Sociedad | Inconvenientes temporales a un grupo reducido | Afectación moderada de un sector | Daños masivos e irreversibles (ej.: deepfakes electorales) |
 
-En la tabla de riesgos, **Total2 (Z) = suma de las cinco categorías** (5–15), **Valor3 (AA)** nivel textual y **Valor4 (AB)** valor 1–3 usado como factor "Impacto". En los dos ejemplos, con Total2 = 9, el nivel resultante es "Alto" y Valor4 = 3, lo que sugiere que Valor4 se deriva del máximo de las categorías (3 en ambos casos) y no del total; al ser .xls, la fórmula no pudo verificarse.
+**Total2 (Z) = suma de las cinco categorías** (5–15), **Valor3 (AA)** nivel textual y **Valor4 (AB)** valor 1–3 usado como factor "Impacto". En los dos ejemplos Total2 = 9 da "Alto" y Valor4 = 3, lo que sugiere que Valor4 toma el máximo de las categorías; al ser .xls, la fórmula no pudo verificarse.
 
 #### 4.3.3 Análisis de vulnerabilidades (columnas AE–AJ, filas 8–13)
 
 Dos métricas de **1 a 3**:
 
-- **Severidad** (cuán difícil es explotar la falla de la "fuente de IA"): 1 = requiere inversión masiva, supercómputo o un zero-day matemático; 2 = requiere conocimientos sólidos de ciencia de datos y ciberseguridad con herramientas estándar (scripts de GitHub, Adversarial Robustness Toolbox); 3 = explotable a costo cero con lenguaje natural, herramientas gratuitas o por simple error humano ante ausencia total de controles.
-- **Exposición** (alcance del daño si se explota): 1 = aislada, desviaciones imperceptibles; 2 = segmentada, degradación parcial con contingencia, inconvenientes reversibles a terceros; 3 = masiva, destruye la validez del modelo, altera decisiones core o causa daño irreversible a terceros (discriminación masiva, robo de identidad).
+- **Severidad** (facilidad de explotar la falla): 1 = requiere inversión masiva, supercómputo o un zero-day; 2 = requiere conocimientos sólidos de ciencia de datos y ciberseguridad con herramientas estándar (scripts de GitHub, Adversarial Robustness Toolbox); 3 = explotable a costo cero con lenguaje natural, herramientas gratuitas o simple error humano.
+- **Exposición** (alcance del daño): 1 = aislada, imperceptible; 2 = segmentada, degradación parcial reversible; 3 = masiva, destruye la validez del modelo o causa daño irreversible a terceros (discriminación masiva, robo de identidad).
 
-Columnas en la tabla: **Fuente de Riesgos (AF)**, **Código (AG)** del catálogo FR, **Severidad (AH)**, **Exposición (AI)** y **Valor5 (AJ)**. Por los valores observados (3+2 → 4; 2+2 → 3; vacío → −1), **Valor5 = Severidad + Exposición − 1**, con rango 1–5.
+Columnas: **Fuente de Riesgos (AF)**, **Código (AG)** del catálogo FR, **Severidad (AH)**, **Exposición (AI)** y **Valor5 (AJ)**. Por los valores observados (3+2 → 4; 2+2 → 3; vacío → −1), **Valor5 = Severidad + Exposición − 1** (1–5).
 
 #### 4.3.4 Análisis de amenazas (columnas AL–AR, filas 8–13)
 
 Dos métricas de **1 a 3** referidas al **agente** de amenaza:
 
-- **Capacidad**: 1 = usuario común con herramientas públicas (ej.: engaña a un chatbot con plantillas de foros); 2 = desarrollador o estudiante con GPU de consumo y scripts (ej.: extrae datos de una API desprotegida); 3 = equipo especializado en seguridad de IA con clústeres en la nube (ej.: grupo de cibercrimen o espionaje industrial).
-- **Motivación**: 1 = curiosidad o validación académica (ej.: investigador ético); 2 = ventaja comercial, venganza laboral menor (ej.: empleado descontento que altera filtros de comisiones); 3 = extorsión millonaria, robo de propiedad intelectual, desestabilización geopolítica (ej.: competidor agresivo o sindicato criminal).
+- **Capacidad**: 1 = usuario común con herramientas públicas (ej.: engaña a un chatbot con plantillas de foros); 2 = desarrollador o estudiante con GPU de consumo (ej.: extrae datos de una API desprotegida); 3 = equipo especializado con clústeres en la nube (ej.: cibercrimen o espionaje industrial).
+- **Motivación**: 1 = curiosidad o validación académica (investigador ético); 2 = ventaja comercial o venganza laboral menor (empleado descontento); 3 = extorsión, robo de propiedad intelectual o desestabilización geopolítica (competidor agresivo, sindicato criminal).
 
 Columnas: **Agente (AM)**, **Int/Ext (AN)**, **Evento de amenaza (AO)**, **Capacidad (AP)**, **Motivación (AQ)** y **Valor6 (AR)**, con **Valor6 = Capacidad + Motivación − 1** (1–5).
 
