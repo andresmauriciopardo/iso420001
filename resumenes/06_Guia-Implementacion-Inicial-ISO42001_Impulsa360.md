@@ -252,44 +252,33 @@ La guía afirma con acierto que **la norma no prescribe una metodología especí
 
 | Término (ES) | Término (EN) | Definición breve | Dónde aparece |
 |---|---|---|---|
-| Sistema de Gestión de Inteligencia Artificial (SGIA) | AI Management System (AIMS) | Conjunto de políticas, procesos y controles para desarrollar, usar y mejorar la IA de forma responsable | Toda la guía |
-| Alta dirección | Top management | Persona o grupo que dirige y controla la organización al más alto nivel; debe liderar el SGIA | Fase 1, Fase 7 |
-| Responsable del SGIA | AIMS owner / project lead | Líder designado con autoridad y recursos para impulsar la implementación (rol propuesto por la guía) | Fase 1 |
+| Sistema de Gestión de Inteligencia Artificial (SGIA) | AI Management System (AIMS) | Políticas, procesos y controles para desarrollar, usar y mejorar la IA de forma responsable | Toda la guía |
+| Responsable del SGIA | AIMS project lead | Líder designado con autoridad y recursos (rol propuesto por la guía, no por la norma) | Fase 1 |
 | Análisis de brechas | Gap analysis | Comparación del estado actual con los requisitos de la norma | Fase 1 |
-| Nivel de autonomía | Level of autonomy | Grado en que un sistema de IA decide sin intervención humana | Fase 1 (inventario) |
-| Partes interesadas | Interested parties / stakeholders | Personas u organizaciones que pueden afectar o verse afectadas por el SGIA | Fase 2 |
-| Alcance | Scope | Límites y aplicabilidad del SGIA (sistemas, procesos, unidades, ubicaciones) | Fase 2 |
-| Política de IA | AI policy | Declaración de principios, compromisos éticos y objetivos que guía el SGIA | Fase 1, Fase 2 |
-| Deriva del modelo | Model drift | Degradación del rendimiento por cambios en los datos o el entorno | Fase 3, Fase 5 |
-| Ataque adversarial | Adversarial attack | Manipulación de entradas para inducir errores en el modelo | Fase 3 |
-| Sesgo algorítmico | Algorithmic bias | Resultado sistemáticamente injusto hacia personas o grupos | Introducción, Fase 3, 4, 5 |
-| Matriz de riesgo | Risk matrix | Herramienta de priorización que cruza probabilidad e impacto | Fase 3 |
-| Tratamiento del riesgo | Risk treatment | Decisión de mitigar, aceptar, transferir o evitar un riesgo | Fase 3 |
+| Nivel de autonomía | Level of autonomy | Grado en que un sistema de IA decide sin intervención humana | Fase 1 |
+| Partes interesadas | Interested parties | Quienes pueden afectar o verse afectados por el SGIA | Fase 2 |
+| Alcance | Scope | Límites y aplicabilidad del SGIA | Fase 2 |
+| Política de IA | AI policy | Principios, compromisos éticos y objetivos que guían el SGIA | Fases 1 y 2 |
+| Deriva del modelo | Model drift | Degradación del rendimiento por cambios en datos o entorno | Fases 3 y 5 |
+| Sesgo algorítmico | Algorithmic bias | Resultado sistemáticamente injusto hacia personas o grupos | Intro, Fases 3-5 |
+| Tratamiento del riesgo | Risk treatment | Mitigar, aceptar, transferir o evitar un riesgo | Fase 3 |
 | Anexo A | Annex A | Catálogo de controles de referencia de ISO/IEC 42001 | Fase 4 |
-| Comité de Ética de IA | AI Ethics Committee | Órgano de gobierno propuesto por la guía para supervisar la IA (no exigido por la norma) | Fase 4 |
-| Ciclo de vida del sistema de IA | AI system life cycle | Diseño, desarrollo, prueba, despliegue, monitoreo y retiro | Fase 4, Fase 5 |
-| Privacidad por diseño | Privacy by design | Integrar la protección de datos desde la concepción del sistema | Fase 5 |
+| Comité de Ética de IA | AI Ethics Committee | Órgano propuesto por la guía (no exigido por la norma) | Fase 4 |
+| Ciclo de vida del sistema de IA | AI system life cycle | Diseño, desarrollo, prueba, despliegue, monitoreo y retiro | Fases 4 y 5 |
 | KPI | Key Performance Indicator | Métrica cuantificable asociada a un objetivo del SGIA | Fase 6 |
-| No conformidad | Nonconformity | Incumplimiento de un requisito | Fase 6, Fase 7 |
-| Incidente de IA | AI incident | Evento adverso relacionado con un sistema de IA (sesgo, brecha, decisión errónea) | Fase 6 |
-| Revisión por la dirección | Management review | Evaluación periódica de conveniencia, adecuación y eficacia del SGIA | Fase 7 |
-| PDCA | Plan-Do-Check-Act | Ciclo de mejora continua: planificar, hacer, verificar, actuar | Fase 7 |
-| Auditoría de Etapa 1 / Etapa 2 | Stage 1 / Stage 2 audit | Revisión documental / auditoría de implementación efectiva por el organismo certificador | Certificación |
+| Incidente de IA | AI incident | Evento adverso relacionado con un sistema de IA | Fase 6 |
+| Revisión por la dirección | Management review | Evaluación periódica de conveniencia, adecuación y eficacia | Fase 7 |
+| PDCA | Plan-Do-Check-Act | Ciclo de mejora continua | Fase 7 |
+| Auditoría de Etapa 1 / Etapa 2 | Stage 1 / Stage 2 audit | Revisión documental / auditoría de implementación por el organismo certificador | Certificación |
 | Auditoría de seguimiento | Surveillance audit | Auditoría anual que mantiene la validez del certificado | Certificación |
-| AI Act | EU Artificial Intelligence Act | Reglamento europeo de IA, citado como motor regulatorio | Introducción, Fase 5 |
-| GDPR / RGPD | General Data Protection Regulation | Reglamento europeo de protección de datos, citado en riesgos de cumplimiento y políticas de datos | Fase 3, Fase 4 |
 
 ## 6. Relación con otros documentos del corpus
 
-- **ISO/IEC 42001:2023 (norma, versiones en español e inglés, y UNE-ISO/IEC 42001:2025):** la guía es una lectura secuencial y simplificada de las cláusulas 4 a 10. Cada fase se ha mapeado en 4.11. El estudiante debe leer la norma para conocer los requisitos exactos que la guía omite: rol de la organización respecto a la IA (4.1), objetivos de IA (6.2), planificación de cambios (6.3), evaluación de impacto de los sistemas de IA (6.1.4, 8.4, A.5), Declaración de Aplicabilidad (6.1.3 d)), salidas de la revisión por la dirección (9.3.3), Anexo B (guía de controles), Anexo C (objetivos y fuentes de riesgo) y Anexo D (dominios y sectores).
-- **ISO/IEC 23894:2023 (gestión de riesgos de IA):** desarrolla con detalle la Fase 3 de la guía (identificación, análisis, evaluación y tratamiento de riesgos de IA, fuentes de riesgo específicas de IA). La metodología de cuatro pasos de la guía es un resumen compatible con 23894 e ISO 31000, aunque la guía no las cita.
-- **ISO 19011:2026 (directrices para la auditoría de sistemas de gestión):** fundamenta la Fase 6 (auditoría interna: programa, competencia de auditores, gestión de hallazgos) y explica el enfoque de la Etapa 1 y Etapa 2 descritas en la sección de certificación.
-- **Catálogo PECB de Impulsa360 (07):** la guía es el material de introducción a las certificaciones ISO/IEC 42001 Foundation, Lead Implementer y Lead Auditor ofrecidas en el catálogo; las Fases 1-7 se corresponden con el temario típico de un Lead Implementer, y la sección de certificación y la Fase 6 con el de Lead Auditor y MS Internal Auditor.
-- **Diagnostico ISO 42001 - A.Brechas.xlsx:** herramienta directa de la Fase 1 (análisis de brechas) y reutilizable como lista de verificación en la Fase 6.
-- **Actividad2 FODA VS RIESGO.xlsx:** instrumenta el análisis de contexto (4.1) de la Fase 2 y la identificación de riesgos y oportunidades (6.1.1) de la Fase 3.
-- **Actividad3 STAKEHOLDERS.xlsx:** instrumenta la identificación de partes interesadas (4.2) de la Fase 2 con matriz poder/interés, equivalente al "nivel de influencia" que menciona la guía.
-- **Analisis de Riesgo SGIA v.03.xls:** operacionaliza los cuatro pasos de la Fase 3 (activos de IA, tabla de riesgos, mapa de calor equivalente a la "matriz de riesgo").
-- **Declaración de Aplicabilidad 42001 - SOAv2.xlsx:** operacionaliza la Fase 4 (selección de controles del Anexo A y su justificación) y la Fase 5 (estado de implementación y madurez), cubriendo la SoA que la guía omite nombrar.
+- **ISO/IEC 42001:2023 (norma en español e inglés; UNE-ISO/IEC 42001:2025):** la guía es una lectura secuencial y simplificada de las cláusulas 4 a 10 (mapeo en 4.11). La norma debe leerse para los requisitos que la guía omite: rol de la organización respecto a la IA (4.1), objetivos de IA (6.2), planificación de cambios (6.3), evaluación de impacto (6.1.4, 8.4, A.5), Declaración de Aplicabilidad (6.1.3 d)), salidas de la revisión por la dirección (9.3.3) y Anexos B, C y D.
+- **ISO/IEC 23894:2023:** desarrolla la Fase 3 (proceso de gestión de riesgos de IA y fuentes de riesgo); la metodología de cuatro pasos de la guía es compatible con 23894 e ISO 31000, aunque no las cita.
+- **ISO 19011:2026:** fundamenta la auditoría interna de la Fase 6 y el enfoque de las Etapas 1 y 2 de certificación.
+- **Catálogo PECB de Impulsa360 (07):** las Fases 1-7 corresponden al temario de un 42001 Lead Implementer; la Fase 6 y la certificación, al de Lead Auditor y MS Internal Auditor.
+- **Plantillas:** Diagnostico ISO 42001 - A.Brechas.xlsx (Fase 1 y lista de verificación en Fase 6); Actividad2 FODA VS RIESGO.xlsx (contexto 4.1 y riesgos/oportunidades 6.1.1); Actividad3 STAKEHOLDERS.xlsx (partes interesadas 4.2 con matriz poder/interés, el "nivel de influencia" de la guía); Analisis de Riesgo SGIA v.03.xls (los cuatro pasos de la Fase 3, con mapa de calor como "matriz de riesgo"); Declaración de Aplicabilidad 42001 - SOAv2.xlsx (Fases 4 y 5: selección, justificación y madurez de controles del Anexo A, es decir, la SoA que la guía no nombra).
 
 ## 7. Aplicación práctica y puntos de examen
 
