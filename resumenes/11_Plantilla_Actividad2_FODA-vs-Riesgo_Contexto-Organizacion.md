@@ -15,7 +15,7 @@ documentos_relacionados_en_corpus: [10_Plantilla_Analisis-de-Riesgo-SGIA.md, 12_
 
 ## 1. Resumen ejecutivo
 
-"Actividad2 FODA VS RIESGO.xlsx" es una plantilla didáctica que enlaza el **análisis del contexto de la organización** (cláusula 4.1 de ISO/IEC 42001) con las **acciones para abordar riesgos y oportunidades** (cláusula 6.1.1) y con su **seguimiento** (cláusula 9.1). Su lógica es sencilla y muy repetida en los sistemas de gestión ISO: la organización lista **cuestiones internas y externas** clasificadas por **factores** (recursos humanos, tecnología, administración estratégica, presupuesto, operaciones, políticas, económicas, ecológicas, sociales), describe cada **aspecto** concreto, indica si **impacta en la estrategia**, lo tipifica como **riesgo positivo o negativo**, lo **prioriza** (1 alto, 2 medio, 3 bajo) y lo etiqueta con una categoría **FODA** (Fortaleza, Debilidad, Oportunidad, Amenaza). Cada aspecto se convierte automáticamente en una fila de la hoja "ANÁLISIS RIESGOS", donde se redacta el riesgo u oportunidad, se estima la **probabilidad** (Alto/Medio/Bajo), se identifican **causas**, se elige el **tratamiento** (Compartir, Modificar, Aceptar) y se asigna **acción, responsable y fecha**. La hoja "SEGUIMIENTO" programa las acciones en un calendario de 12 meses × 4 semanas con marcas "P" (programado) y "E" (ejecutado) y calcula el **porcentaje de cumplimiento** y el **estado** (PENDIENTE, EN PROCESO, EJECUTADO). Las hojas "ANÁLISIS" y "ANÁLISIS2" generan los conteos y gráficos de resumen. La hoja "ESCALAS" contiene las tablas de probabilidad, impacto, matriz 3 × 3 y niveles de riesgo (Aceptable, Aceptable condicionado, Inaceptable). La plantilla importa porque muestra a un implementador cómo pasar de un ejercicio cualitativo (FODA) a un registro de riesgos trazable y medible, que es lo que un auditor pedirá como evidencia de 4.1 y 6.1.1.
+"Actividad2 FODA VS RIESGO.xlsx" es una plantilla didáctica que enlaza el **análisis del contexto de la organización** (cláusula 4.1 de ISO/IEC 42001) con las **acciones para abordar riesgos y oportunidades** (6.1.1) y con su **seguimiento** (9.1). La organización lista **cuestiones internas y externas** clasificadas por **factores** (recursos humanos, tecnología, administración estratégica, presupuesto, operaciones, políticas, económicas, ecológicas, sociales), describe cada **aspecto**, indica si **impacta en la estrategia**, lo tipifica como **riesgo positivo o negativo**, lo **prioriza** (1 alto, 2 medio, 3 bajo) y lo etiqueta como **Fortaleza, Debilidad, Oportunidad o Amenaza**. Cada aspecto pasa por fórmula a la hoja "ANÁLISIS RIESGOS", donde se redacta el riesgo u oportunidad, se estima la **probabilidad** (Alto/Medio/Bajo), se identifican **causas**, se elige el **tratamiento** (Compartir, Modificar, Aceptar) y se asigna **acción, responsable y fecha**. La hoja "SEGUIMIENTO" programa las acciones en un calendario de 12 meses × 4 semanas con marcas "P" (programado) y "E" (ejecutado) y calcula el **porcentaje de cumplimiento** y el **estado** (PENDIENTE, EN PROCESO, EJECUTADO). "ANÁLISIS" y "ANÁLISIS2" generan conteos y gráficos; "ESCALAS" contiene las tablas de probabilidad, impacto, matriz 3 × 3 y niveles de riesgo (Aceptable, Aceptable condicionado, Inaceptable). La plantilla importa porque muestra cómo pasar de un ejercicio cualitativo (FODA) a un registro de riesgos trazable y medible, la evidencia que un auditor pedirá para 4.1 y 6.1.1.
 
 ## 2. Identificación y contexto del documento
 
@@ -122,7 +122,7 @@ Registro principal de aspectos (filas 5–25). Columnas:
 
 **Dato de ejemplo completo (fila 5)**: N° 1, INTERNAS, Recursos Humanos, aspecto "Alta rotación en directivos de la organización, lo que no permite que se implementen correctamente las políticas de PDP", impacta en la estrategia: Sí, Riesgos negativos, priorización 1, **Debilidad**.
 
-El resto de filas contiene solo la clasificación parcial: 7 Fortalezas (filas 6–12; algunas marcadas incoherentemente como "Riesgos negativos"), 4 Debilidades, 3 Oportunidades y 6 Amenazas, lo que totaliza los **20 aspectos** que cuentan las hojas de análisis. En las columnas W–X hay notas de trabajo sueltas ("Indicadores de incidentes", "Proceso de compras", "Multiplica pro", "Programa de multiplica Pro", "Qué cursos de ingeniería se tienen", "Compartir"), aparentemente apuntes de la sesión de taller.
+El resto de filas solo tiene clasificación parcial: 7 Fortalezas (filas 6–12; varias marcadas incoherentemente como "Riesgos negativos"), 4 Debilidades, 3 Oportunidades y 6 Amenazas, los **20 aspectos** que cuentan las hojas de análisis. Las columnas W–X contienen apuntes sueltos del taller ("Indicadores de incidentes", "Proceso de compras", "Programa de multiplica Pro", "Qué cursos de ingeniería se tienen").
 
 ### 4.4 Hoja "ANÁLISIS RIESGOS"
 
@@ -206,31 +206,30 @@ Cada tabla alimenta un gráfico (seis gráficos en la hoja). Los conteos revelan
 
 ## 6. Relación con otros documentos del corpus
 
-- **ISO/IEC 42001, 4.1 (comprensión de la organización y su contexto)**: la norma exige determinar las cuestiones externas e internas pertinentes al propósito y que afectan la capacidad de lograr los resultados previstos del SGIA, incluyendo el rol de la organización respecto a la IA (proveedor, usuario, desarrollador, etc.). Las hojas "ESCALAS" (marco) y "CONTEXTO ORGANIZACIÓN" (registro) son la evidencia documental directa de esa determinación. La plantilla no incluye el campo de **rol respecto a la IA** ni el enlace explícito con la política de IA; el usuario debe complementarlo.
-- **4.2 (partes interesadas)**: la hoja no las registra; se complementa con la plantilla del archivo 12 (Stakeholders).
-- **6.1.1 (generalidades: acciones para abordar riesgos y oportunidades)**: la norma pide considerar las cuestiones de 4.1 y los requisitos de 4.2 para determinar los riesgos y oportunidades que hay que abordar, planificar acciones e integrarlas en los procesos del SGIA y evaluar su eficacia. La hoja "ANÁLISIS RIESGOS" convierte cada cuestión en riesgo/oportunidad con acción, responsable y fecha, y "SEGUIMIENTO" mide la ejecución, lo que cubre la planificación y la evaluación de eficacia. A diferencia del archivo 10 (riesgos por activo de IA, 6.1.2), aquí el objeto son los riesgos **del sistema de gestión y del contexto**.
-- **9.1 (seguimiento, medición, análisis y evaluación)**: el porcentaje de cumplimiento y el estado por acción, junto con los gráficos de ANÁLISIS y ANÁLISIS2, son indicadores de desempeño del SGIA presentables en la revisión por la dirección (9.3).
-- **ISO 31000 / ISO/IEC 23894**: la terminología compartir-modificar-aceptar, la matriz probabilidad × impacto y los niveles de aceptación siguen el vocabulario de ISO 31000, que ISO/IEC 23894 adapta a la IA.
-- **Plantilla 10 (Análisis de Riesgo SGIA)**: complementaria; el análisis de contexto identifica, por ejemplo, la alta rotación directiva como debilidad, mientras que la plantilla de riesgos de IA evalúa amenazas concretas sobre modelos y datos.
+- **ISO/IEC 42001, 4.1 (contexto)**: la norma exige determinar las cuestiones externas e internas pertinentes al propósito que afectan los resultados previstos del SGIA, incluido el rol de la organización respecto a la IA. "ESCALAS" (marco) y "CONTEXTO ORGANIZACIÓN" (registro) son la evidencia directa; la plantilla no incluye el **rol respecto a la IA** y debe complementarse.
+- **4.2 (partes interesadas)**: no se registran aquí; se complementa con el archivo 12 (Stakeholders).
+- **6.1.1 (acciones para abordar riesgos y oportunidades)**: la norma pide considerar 4.1 y 4.2 para determinar riesgos y oportunidades, planificar acciones, integrarlas en el SGIA y evaluar su eficacia. "ANÁLISIS RIESGOS" convierte cada cuestión en riesgo/oportunidad con acción, responsable y fecha; "SEGUIMIENTO" mide la ejecución. A diferencia del archivo 10 (riesgos por activo de IA, 6.1.2), aquí el objeto son los riesgos **del sistema de gestión y del contexto**.
+- **9.1 y 9.3**: el porcentaje de cumplimiento, el estado por acción y los gráficos de ANÁLISIS/ANÁLISIS2 son indicadores presentables en la revisión por la dirección.
+- **ISO 31000 / ISO/IEC 23894**: la terminología compartir-modificar-aceptar, la matriz probabilidad × impacto y los niveles de aceptación siguen ISO 31000, que 23894 adapta a la IA.
 
 ## 7. Aplicación práctica y puntos de examen
 
-Secuencia de uso: (1) revisar el marco de ESCALAS y acordar las escalas con la dirección; (2) en un taller con las áreas, poblar "CONTEXTO ORGANIZACIÓN" recorriendo los nueve factores y separando cuestiones internas de externas; (3) para cada aspecto decidir si impacta en la estrategia, priorizar y etiquetar FODA; (4) en "ANÁLISIS RIESGOS" redactar el riesgo u oportunidad, estimar probabilidad, identificar causas, elegir tratamiento y asignar acción, responsable y fecha; (5) programar las semanas en "SEGUIMIENTO" con "P" y registrar "E" al ejecutar; (6) presentar los gráficos de ANÁLISIS y ANÁLISIS2 en la revisión por la dirección; (7) actualizar el contexto cuando cambie (cláusula 4.1 es dinámica).
+Secuencia de uso: (1) acordar las escalas de ESCALAS con la dirección; (2) en taller, poblar "CONTEXTO ORGANIZACIÓN" recorriendo los nueve factores; (3) decidir impacto en la estrategia, priorizar y etiquetar FODA; (4) en "ANÁLISIS RIESGOS" redactar riesgo u oportunidad, probabilidad, causas, tratamiento, acción, responsable y fecha; (5) programar semanas con "P" y registrar "E" en "SEGUIMIENTO"; (6) presentar los gráficos en la revisión por la dirección; (7) actualizar el contexto cuando cambie.
 
 Puntos "debes saber":
 
 1. Lo **interno** se clasifica como fortaleza o debilidad; lo **externo** como oportunidad o amenaza.
 2. Fortalezas y oportunidades generan **riesgos positivos**; debilidades y amenazas, **riesgos negativos**: la norma habla de riesgos **y oportunidades**.
-3. La priorización usa 1 = alto, 2 = medio, 3 = bajo (el número menor es la prioridad mayor).
-4. La matriz 3 × 3 multiplica probabilidad por impacto; los valores posibles son 1, 2, 3, 4, 6 y 9 (el 5, 7 y 8 no existen).
+3. Priorización 1 = alto, 2 = medio, 3 = bajo.
+4. La matriz 3 × 3 multiplica probabilidad por impacto; valores posibles 1, 2, 3, 4, 6 y 9.
 5. Niveles: 1–2 Aceptable; 3–4 Aceptable condicionado; 6–9 Inaceptable con reporte a la alta dirección.
-6. Opciones de tratamiento: compartir (transferir), modificar (reducir) y aceptar (retener); el cuadro de mando las llama evitar/reducir/asumir.
-7. El estado de una acción se deriva del **porcentaje ejecutado/programado**: 0 % PENDIENTE, 100 % EJECUTADO, intermedio EN PROCESO.
-8. La reprogramación se marca con "RP" (programación) o "PR" (ejecución) y no cuenta como programado ni ejecutado en las fórmulas.
-9. La cláusula 4.1 exige también determinar el **rol de la organización respecto a la IA**; la plantilla no lo contempla y debe añadirse.
-10. Un auditor pedirá evidencia de que los riesgos y oportunidades identificados en 6.1.1 se derivan de 4.1 y 4.2: la trazabilidad por fórmula entre las hojas es precisamente esa evidencia.
+6. Tratamiento: compartir (transferir), modificar (reducir), aceptar (retener); el cuadro de mando las llama evitar/reducir/asumir.
+7. Estado = porcentaje ejecutado/programado: 0 % PENDIENTE, 100 % EJECUTADO, intermedio EN PROCESO.
+8. "RP"/"PR" marcan reprogramación y no cuentan como programado ni ejecutado.
+9. La cláusula 4.1 exige además el **rol de la organización respecto a la IA**, ausente en la plantilla.
+10. La trazabilidad por fórmula entre hojas es la evidencia de que los riesgos de 6.1.1 derivan de 4.1 y 4.2.
 
-Errores frecuentes: dejar aspectos etiquetados FODA sin factor ni priorización (como en el ejemplo, donde 20 aspectos tienen FODA pero solo 1 está completo); clasificar una fortaleza como "riesgo negativo"; borrar filas del registro y romper las fórmulas (#REF!); no marcar semanas en el cronograma, con lo que el estado queda vacío y el indicador global da error.
+Errores frecuentes: aspectos con FODA pero sin factor ni priorización (en el ejemplo, 20 etiquetados y solo 1 completo); una fortaleza clasificada como "riesgo negativo"; borrar filas y romper fórmulas (#REF!); no marcar semanas, con lo que el estado queda vacío y el indicador global da error.
 
 ## 8. Limitaciones del análisis
 

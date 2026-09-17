@@ -158,25 +158,25 @@ Fórmula declarada en AT12/AU16: **Riesgo Total = Amenaza × Vulnerabilidad × P
 
 #### 4.3.8 Catálogo de fuentes de riesgo por fase del ciclo de vida (AF33–AI44)
 
-| Fase del ciclo de vida | Código | Fuente de riesgo | Foco de control para el analista |
+| Fase del ciclo de vida | Código | Fuente de riesgo | Foco de control |
 |---|---|---|---|
-| Fase 1: Planificación y diseño (definición del objetivo, evaluación de riesgos éticos y de privacidad) | FR1-1 | Complejidad del entorno | Incertidumbre del rendimiento en entornos amplios o no controlados (ej.: redes públicas de telecomunicaciones) |
-| | FR1-2 | Nivel de automatización | Riesgos del grado de autonomía delegado: seguridad física, equidad, seguridad corporativa |
-| | FR1-3 | Preparación tecnológica | Tecnologías inmaduras (límites desconocidos, deriva) o muy maduras (complacencia del operador) |
-| Fase 2: Preparación y tratamiento de datos (recopilación, limpieza) | FR2-1 | Fuentes de riesgo del aprendizaje automático (Datos) | Calidad de datos, fallas de recolección y etiquetado |
-| | FR2-2 | Diversidad de datos | Conjuntos heterogéneos que exponen datos confidenciales o retrasan el procesamiento |
-| Fase 3: Desarrollo y entrenamiento del modelo | FR3-1 | Falta de transparencia y explicabilidad | Incapacidad de dar información clara y auditable a las partes interesadas |
-| | FR3-2 | Fuentes de riesgo del aprendizaje automático (Robustez) | Perturbaciones, sobreajuste, envenenamiento de datos en entrenamiento |
-| Fase 4: Despliegue y comercialización | FR4-1 | Problemas del ciclo de vida (Implementación) | Defectos heredados del diseño o implementación inadecuada en producción |
-| | FR4-2 | Problemas con el hardware (Transferencia) | Incompatibilidades o pérdida de precisión al migrar modelos entre arquitecturas o nubes |
-| Fase 5: Explotación, uso y supervisión (monitoreo, reentrenamiento) | FR5-1 | Problemas con el hardware del sistema (Fallas) | Errores de hardware en ejecución por componentes defectuosos o degradación |
-| | FR5-2 | Problemas del ciclo de vida (Mantenimiento y Retiro) | Falta de monitoreo de deriva (model drift) y vacíos de seguridad en la retirada del servicio |
+| Fase 1: Planificación y diseño | FR1-1 | Complejidad del entorno | Rendimiento incierto en entornos amplios o no controlados |
+| | FR1-2 | Nivel de automatización | Autonomía delegada: seguridad física, equidad, seguridad corporativa |
+| | FR1-3 | Preparación tecnológica | Tecnología inmadura (deriva) o muy madura (complacencia) |
+| Fase 2: Preparación y tratamiento de datos | FR2-1 | Aprendizaje automático (Datos) | Calidad, recolección y etiquetado de datos |
+| | FR2-2 | Diversidad de datos | Conjuntos heterogéneos que exponen datos confidenciales |
+| Fase 3: Desarrollo y entrenamiento | FR3-1 | Falta de transparencia y explicabilidad | Información no auditable para las partes interesadas |
+| | FR3-2 | Aprendizaje automático (Robustez) | Perturbaciones, sobreajuste, envenenamiento |
+| Fase 4: Despliegue y comercialización | FR4-1 | Ciclo de vida (Implementación) | Defectos heredados o implementación inadecuada |
+| | FR4-2 | Hardware (Transferencia) | Pérdida de precisión al migrar modelos entre arquitecturas o nubes |
+| Fase 5: Explotación, uso y supervisión | FR5-1 | Hardware del sistema (Fallas) | Errores de hardware en ejecución |
+| | FR5-2 | Ciclo de vida (Mantenimiento y Retiro) | Falta de monitoreo de deriva (model drift); retirada insegura |
 
-Este catálogo reproduce, adaptado, las fuentes de riesgo del Anexo B de ISO/IEC 23894 (complejidad del entorno, nivel de automatización, preparación tecnológica, falta de transparencia y explicabilidad, riesgos del aprendizaje automático, problemas de hardware y del ciclo de vida del sistema) y las fases del ciclo de vida del Anexo C de la misma norma.
+El catálogo reproduce, adaptado, las fuentes de riesgo del Anexo B y las fases del ciclo de vida del Anexo C de ISO/IEC 23894.
 
 ### 4.4 Hoja "Mapa Riesgos"
 
-Registro consolidado de 10 filas (A4–A13), organizado en tres bloques: **Identificación del riesgo** (N°, Activo, Riesgo, Causas, Consecuencia), **Valoración del riesgo** (Evaluación, Nivel de riesgo inherente, Controles existentes, Eficacia del control SI/NO, Grado de exposición residual, Nivel de riesgo residual) y **Plan de Acción** (Controles recomendados, Acciones, Recursos, Responsable, Plazo). Las filas se alimentan de "Tabla de Riesgos": riesgo 1 = "Modificación errónea de tarifas fijas a miles de usuarios sin veto humano" (causa: nivel de automatización; inherente 600; control "No se evidencia"; eficacia "SI"; residual 600); riesgo 2 = "Bit-flips en memoria…" (causa: fallas de hardware; 432/432). La fila 14 totaliza 2 riesgos. Las columnas de plan de acción (acciones, recursos, responsable, plazo) están vacías en el ejemplo. Esta hoja es el **plan de tratamiento de riesgos** de la cláusula 6.1.3.
+Registro consolidado de 10 filas (A4–A13) en tres bloques: **Identificación del riesgo** (N°, Activo, Riesgo, Causas, Consecuencia), **Valoración del riesgo** (Evaluación, Nivel inherente, Controles existentes, Eficacia SI/NO, Grado de exposición residual, Nivel residual) y **Plan de Acción** (Controles recomendados, Acciones, Recursos, Responsable, Plazo). Se alimenta de "Tabla de Riesgos": riesgo 1 = modificación errónea de tarifas sin veto humano (inherente 600; control "No se evidencia"; eficacia "SI"; residual 600); riesgo 2 = bit-flips en memoria (432/432). La fila 14 totaliza 2 riesgos; el plan de acción está vacío en el ejemplo. Es el **plan de tratamiento de riesgos** de 6.1.3.
 
 ### 4.5 Hoja "Dashboard"
 
@@ -207,41 +207,39 @@ Título "Dashboard de Evaluación de Riesgos SGPD". Seis tablas de conteo que al
 
 ## 6. Relación con otros documentos del corpus
 
-- **ISO/IEC 42001, 6.1.2 (evaluación de riesgos de IA)**: la norma exige definir y aplicar un proceso que establezca criterios de riesgo, identifique riesgos, los analice (consecuencias potenciales y probabilidad realista) y los evalúe frente a los criterios. La plantilla operacionaliza cada paso: criterios = umbrales BW2–BZ5 y reglas de aceptación BA8/BA10; identificación = columnas AF–AO (fuente, evento, agente); análisis = escalas de sensibilidad, impacto, vulnerabilidad, amenaza y probabilidad; evaluación = columna BA (nivel).
-- **6.1.3 (tratamiento de riesgos de IA)**: la selección de opciones de tratamiento y controles se refleja en las columnas BF–BU y en el bloque "Plan de Acción" de "Mapa Riesgos"; la columna BU está pensada para citar controles del Anexo A y así enlazar con la Declaración de Aplicabilidad.
-- **6.1.4 (evaluación de impacto del sistema de IA)**: las dimensiones "Impacto en la Sociedad", "Ética e Inclusión" y "Beneficio Social" anticipan la evaluación de impacto sobre individuos y sociedad, aunque la plantilla no la separa como documento propio.
-- **8.2 (evaluación de riesgos de IA en operación)**: la plantilla es el registro que se ejecuta a intervalos planificados o ante cambios; la hoja "Información" guarda la fecha de próxima revisión.
-- **ISO/IEC 23894 (gestión del riesgo de IA)**: el catálogo FR1-1 a FR5-2 y su organización por fases reproducen la estructura de fuentes de riesgo (Anexo B) y ciclo de vida (Anexo C) de esa guía; las siete dimensiones de sensibilidad coinciden con los objetivos relacionados con IA (equidad, transparencia, responsabilidad, seguridad, privacidad, robustez, supervisión).
-- **Plantillas hermanas**: el archivo 11 (FODA vs Riesgo) cubre los riesgos del **contexto** (6.1.1) con una matriz probabilidad × impacto 3 × 3, mientras que esta plantilla cubre los riesgos **por activo de IA** (6.1.2); el archivo 12 (Stakeholders) aporta las partes interesadas cuyas expectativas explican los impactos legales y reputacionales.
+- **ISO/IEC 42001, 6.1.2 (evaluación de riesgos de IA)**: la norma exige un proceso con criterios de riesgo, identificación, análisis (consecuencias y probabilidad) y evaluación frente a los criterios. La plantilla lo operacionaliza: criterios = umbrales BW2–BZ5 y reglas BA8/BA10; identificación = columnas AF–AO; análisis = escalas de sensibilidad, impacto, vulnerabilidad, amenaza y probabilidad; evaluación = columna BA.
+- **6.1.3 (tratamiento)**: columnas BF–BU y bloque "Plan de Acción" de "Mapa Riesgos"; la columna BU está pensada para citar controles del Anexo A y enlazar con la Declaración de Aplicabilidad.
+- **6.1.4 (evaluación de impacto)**: las dimensiones "Impacto en la Sociedad", "Ética e Inclusión" y "Beneficio Social" anticipan la evaluación de impacto sobre individuos y sociedad, sin separarla como documento propio.
+- **8.2**: la plantilla es el registro que se ejecuta a intervalos planificados o ante cambios ("Fecha de próxima revisión").
+- **ISO/IEC 23894**: el catálogo FR reproduce sus fuentes de riesgo (Anexo B) y ciclo de vida (Anexo C); las siete dimensiones de sensibilidad coinciden con sus objetivos relacionados con la IA.
+- **Plantillas hermanas**: el archivo 11 cubre los riesgos del **contexto** (6.1.1) con una matriz 3 × 3; este cubre los riesgos **por activo de IA** (6.1.2); el archivo 12 aporta las partes interesadas que explican los impactos legales y reputacionales.
 
 ## 7. Aplicación práctica y puntos de examen
 
-Secuencia de uso: (1) completar la portada; (2) inventariar activos de IA, clasificarlos como primarios o secundarios y ubicarlos; (3) para cada activo, valorar las siete dimensiones de sensibilidad (1–5); (4) describir el impacto y puntuar las cinco categorías (1–3); (5) elegir la fuente de riesgo del catálogo FR y puntuar severidad y exposición; (6) describir agente, origen interno/externo y evento de amenaza, y puntuar capacidad y motivación; (7) asignar probabilidad; (8) leer el riesgo total y su nivel; (9) documentar controles existentes y recalcular el residual; (10) trasladar a "Mapa Riesgos" las acciones, recursos, responsables y plazos; (11) presentar el "Dashboard" en la revisión por la dirección.
+Secuencia de uso: (1) portada; (2) inventario de activos de IA (primarios/secundarios, ubicación); (3) sensibilidad en siete dimensiones (1–5); (4) impacto en cinco categorías (1–3); (5) fuente de riesgo FR, severidad y exposición; (6) agente, origen y evento de amenaza, capacidad y motivación; (7) probabilidad; (8) riesgo total y nivel; (9) controles existentes y residual; (10) plan de acción en "Mapa Riesgos"; (11) "Dashboard" en la revisión por la dirección.
 
 Puntos "debes saber":
 
-1. La fórmula del riesgo es multiplicativa de cinco factores y su máximo es 3.375; los tres niveles se obtienen dividiendo ese rango en tercios.
-2. La **sensibilidad** se mide en siete dimensiones de IA responsable, no solo en confidencialidad-integridad-disponibilidad como en seguridad de la información.
-3. **Impacto** y **probabilidad** usan escalas 1–3; sensibilidad usa 1–5.
+1. La fórmula del riesgo multiplica cinco factores; máximo 3.375; los tres niveles son tercios de ese rango.
+2. La **sensibilidad** se mide en siete dimensiones de IA responsable, no solo en confidencialidad-integridad-disponibilidad.
+3. **Impacto** y **probabilidad** usan escalas 1–3; sensibilidad 1–5.
 4. Vulnerabilidad = severidad + exposición − 1; amenaza = capacidad + motivación − 1.
 5. Los riesgos BAJOS pueden **retenerse**; los MEDIOS y ALTOS **deben** reducirse, evitarse o transferirse.
-6. El riesgo residual solo cambia si el control modifica la severidad o la exposición de la vulnerabilidad.
+6. El residual solo cambia si el control modifica la severidad o la exposición.
 7. Las fuentes de riesgo se codifican por fase del ciclo de vida (FR1 diseño … FR5 operación y retiro), alineadas con ISO/IEC 23894.
 8. Distinguir human-in-the-loop, human-on-the-loop y human-out-of-the-loop.
-9. Un "algoritmo autónomo descontrolado" puede ser un **agente de amenaza interno** y una "ola de calor" un agente externo: las amenazas a la IA no son solo humanas ni maliciosas.
-10. La evaluación debe repetirse a intervalos planificados (campo "Fecha de próxima revisión").
-11. Error frecuente: dejar vacía la columna de controles recomendados del Anexo A, con lo que la evaluación no conecta con la Declaración de Aplicabilidad.
-12. Error frecuente: registrar "No se evidencia" como control existente y marcar la eficacia como "SI", como ocurre en el ejemplo.
+9. Un algoritmo autónomo (interno) o una ola de calor (externa) pueden ser agentes de amenaza: no todas las amenazas son humanas ni maliciosas.
+10. La evaluación se repite a intervalos planificados o ante cambios (8.2).
+11. Errores frecuentes: dejar vacía la columna de controles del Anexo A (sin enlace con la Declaración de Aplicabilidad) y registrar "No se evidencia" como control con eficacia "SI", como en el ejemplo.
 
-Preguntas típicas de auditoría: ¿existe un inventario de sistemas de IA en el alcance? ¿Los criterios de aceptación están aprobados por la dirección? ¿Se identifican propietarios de riesgo? ¿El plan de tratamiento tiene responsables y plazos? ¿Se vinculan los controles con el Anexo A?
+Preguntas de auditoría: ¿existe inventario de sistemas de IA en el alcance? ¿Los criterios de aceptación están aprobados? ¿Hay propietarios de riesgo? ¿El plan de tratamiento tiene responsables y plazos? ¿Se vinculan controles del Anexo A?
 
 ## 8. Limitaciones del análisis
 
-- El archivo es .xls binario; el volcado no incluye fórmulas. Las reglas de cálculo (Valor5, Valor6, Riesgo Total) se dedujeron de los valores y son consistentes con los dos ejemplos y con las filas vacías, pero las reglas que convierten Total1 en nivel textual (Valor1) y Total2 en Valor4 no pudieron confirmarse.
-- Inconsistencias internas de la plantilla: Total1 = 25 se etiqueta "Medio" y Total1 = 24 "Alto" (posible error de fórmula); el ejemplo 1 usa código FR1-1 ("Complejidad del entorno") para la fuente "Nivel de automatización", que en el catálogo es FR1-2; el Dashboard cuenta 2 sensibilidades "Alto" aunque la tabla muestra "Medio" y "Alto"; el Dashboard omite la categoría "Impacto en la Sociedad"; el título del Dashboard dice "SGPD" en lugar de "SGIA".
-- Erratas del original corregidas en este resumen: "Sansionador" → Sancionador, "Descrpción", "Cóidigo", "ocurrrir", "debeaplicar", "ANPD/ANPDP".
-- El carácter "Ä" de las columnas BB/BR es un símbolo de fuente decorativa cuyo glifo real no se puede reproducir en texto.
-- Los gráficos del Dashboard no se extrajeron; solo se describen sus tablas fuente.
+- El archivo es .xls binario; el volcado no incluye fórmulas. Las reglas Valor5, Valor6 y Riesgo Total se dedujeron de los valores (consistentes con los ejemplos y las filas vacías); las que convierten Total1 en Valor1 y Total2 en Valor4 no pudieron confirmarse.
+- Inconsistencias de la plantilla: Total1 = 25 se etiqueta "Medio" y 24 "Alto"; el ejemplo 1 usa FR1-1 para "Nivel de automatización", que en el catálogo es FR1-2; el Dashboard cuenta 2 sensibilidades "Alto", omite "Impacto en la Sociedad" y se titula "SGPD" en lugar de "SGIA".
+- Erratas corregidas: "Sansionador", "Descrpción", "Cóidigo", "ocurrrir", "debeaplicar".
+- El carácter "Ä" (BB/BR) es un símbolo de fuente decorativa no reproducible en texto; los gráficos del Dashboard no se extrajeron.
 - No consta autor, fecha ni licencia.
 
 ## 9. Referencias
