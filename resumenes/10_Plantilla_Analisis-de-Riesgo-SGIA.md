@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Plantillas – Análisis de Riesgo SGIA, FODA vs Riesgo y Stakeholders)"
 palabras_clave: [evaluación de riesgos de IA, inventario de activos de IA, sensibilidad, impacto, amenaza, vulnerabilidad, probabilidad, riesgo inherente, riesgo residual, umbrales de riesgo, fuentes de riesgo, ciclo de vida de la IA, mapa de riesgos, dashboard, ISO/IEC 42001 6.1.2, ISO/IEC 23894]
-documentos_relacionados_en_corpus: [11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md, 12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "09_Plantilla_Declaracion-de-Aplicabilidad-SOA-ISO42001.md", "11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md", "12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md"]
 ---
 
 ## 1. Resumen ejecutivo

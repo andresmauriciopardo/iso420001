@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de material didáctico – Impulsa360 Academy)"
 palabras_clave: [ISO/IEC 42001, SGIA, AIMS, implementación, fases, diagnóstico, alcance, política de IA, evaluación de riesgos, Anexo A, controles, formación, auditoría interna, revisión por la dirección, certificación, PDCA, AI Act, GDPR, Impulsa360]
-documentos_relacionados_en_corpus: ["01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md", "07_Catalogo-Certificaciones-PECB_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "09_Plantilla_Declaracion-de-Aplicabilidad-SOA-ISO42001.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md", "12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md"]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md", "07_Catalogo-Certificaciones-PECB_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "09_Plantilla_Declaracion-de-Aplicabilidad-SOA-ISO42001.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md", "12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md", "13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md"]
 ---
 
 ## 1. Resumen ejecutivo
@@ -139,7 +139,7 @@ La guía afirma con acierto que **la norma no prescribe una metodología especí
 
 **Objetivo:** seleccionar e implementar controles apropiados para tratar los riesgos valorados.
 
-**Sobre el Anexo A (informativo, correcto en lo esencial):** la guía indica que el Anexo A es un catálogo de controles específicos para IA, organizado en dominios como gobierno de la IA, ciclo de vida de los sistemas, transparencia, privacidad y tratamiento de datos, y que combina medidas organizacionales, de proceso y técnicas. No cita la numeración real (A.2 a A.10) ni el número de controles (38 en 9 objetivos de control).
+**Sobre el Anexo A (informativo, correcto en lo esencial):** la guía indica que el Anexo A es un catálogo de controles específicos para IA, organizado en dominios como gobierno de la IA, ciclo de vida de los sistemas, transparencia, privacidad y tratamiento de datos, y que combina medidas organizacionales, de proceso y técnicas. No cita la numeración real (A.2 a A.10) ni el número de controles (38 controles en 9 dominios, A.2 a A.10, con 10 objetivos de control).
 
 **Cuatro ejes de control (columnas gráficas):**
 1. **Gobierno de IA**: definir roles y responsabilidades claros para desarrollo, despliegue y supervisión; establecer un **Comité de Ética de IA** o estructura equivalente con mandato formal. (El comité es una recomendación de la guía; la norma exige roles y responsabilidades, A.3.2, no un comité.)

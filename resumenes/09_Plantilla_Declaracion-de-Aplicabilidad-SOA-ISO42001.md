@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Plantillas - Diagnóstico de Brechas y Declaración de Aplicabilidad)"
 palabras_clave: [Declaración de Aplicabilidad, SoA, Statement of Applicability, ISO/IEC 42001, cláusula 6.1.3, tratamiento de riesgos, Anexo A, 38 controles, aplicabilidad, justificación, nivel de implementación, madurez por dominio, gráfico radar, listas desplegables]
-documentos_relacionados_en_corpus: ["resumen de la norma ISO/IEC 42001 (cláusula 6.1.3 y Anexo A)", "resumen de UNE-ISO/IEC 42001 (versión española)", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "resumen de la plantilla 'Analisis de Riesgo SGIA v.03'", "resumen de la guía de implementación del SGIA", "resumen de ISO/IEC 23894 (gestión de riesgos de IA)", "resumen de ISO 19011 (auditoría de sistemas de gestión)"]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md"]
 ---
 
 ## 1. Resumen ejecutivo

@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Norma – ISO/IEC 42001 cuerpo principal)"
 palabras_clave: [ISO/IEC 42001, UNE-ISO/IEC 42001, sistema de gestión de la IA, SGIA, AIMS, estructura armonizada, Anexo SL, contexto de la organización, liderazgo, política de IA, evaluación del riesgo de la IA, tratamiento del riesgo, evaluación del impacto del sistema de IA, declaración de aplicabilidad, objetivos de la IA, información documentada, auditoría interna, revisión por la dirección, no conformidad, acción correctiva, mejora continua]
-documentos_relacionados_en_corpus: ["resumen de los anexos A, B, C y D de ISO/IEC 42001:2023 (controles de referencia, guía de implementación, objetivos y fuentes de riesgo, dominios sectoriales)", "resumen de ISO/IEC 23894:2023 (gestión del riesgo de IA)", "resumen de ISO 19011:2026 (directrices para la auditoría de sistemas de gestión)", "resumen de la Guía para la Implementación ISO/IEC 42001 de Impulsa360 Academy", "resúmenes de las plantillas Excel para ejercicios y proyectos", "resumen del Catálogo de Capacitaciones y Certificaciones PECB / Impulsa360 Academy"]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "07_Catalogo-Certificaciones-PECB_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "09_Plantilla_Declaracion-de-Aplicabilidad-SOA-ISO42001.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md", "12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md"]
 ---
 
 ## 1. Resumen ejecutivo
@@ -190,12 +190,12 @@ Información documentada exigida: ninguna explícita (la evidencia se obtiene a 
 
 #### 5.2 Política de IA
 
-La alta dirección debe establecer una política de IA que:
+La alta dirección debe **establecer una política de IA** con cuatro características exigidas:
 
-- a) sea apropiada al propósito de la organización;
-- b) proporcione un marco para establecer los objetivos de la IA (6.2);
-- c) incluya el compromiso de cumplir los requisitos aplicables;
-- d) incluya el compromiso de mejora continua del SGIA.
+- a) adecuación al propósito de la organización;
+- b) servir de marco para fijar los objetivos de la IA (6.2);
+- c) compromiso explícito de cumplir los requisitos aplicables;
+- d) compromiso explícito de mejora continua del SGIA.
 
 Además, la política de IA debe: estar disponible como **información documentada**; **referenciar**, cuando proceda, otras políticas de la organización (elemento específico de 42001); **comunicarse** dentro de la organización; y estar **disponible para las partes interesadas** según corresponda.
 
@@ -223,7 +223,7 @@ Información documentada exigida: ninguna explícita en 5.3 (el control A.3.2 y 
 Requisitos:
 
 - Al planificar el SGIA, considerar las cuestiones de 4.1 y los requisitos de 4.2, y **determinar los riesgos y oportunidades** que es necesario abordar para: asegurar que el SGIA logre sus resultados previstos; prevenir o reducir efectos no deseados; lograr la mejora continua.
-- Establecer y mantener **criterios de riesgo relativos a la IA** que permitan: distinguir riesgos aceptables de no aceptables; realizar evaluaciones del riesgo del uso de la IA; tratar el riesgo del uso de la IA; evaluar el impacto de los riesgos de la IA.
+- Establecer y mantener **criterios de riesgo relativos a la IA** que sirvan para: distinguir los riesgos aceptables de los que no lo son; evaluar y tratar el riesgo asociado al uso de la IA; valorar el impacto de los riesgos de la IA.
 - Determinar los riesgos y oportunidades según: el **ámbito y contexto de aplicación** de un sistema de IA; el **uso previsto**; los contextos externo e interno de 4.1.
 - Planificar (a) las **acciones** para abordar esos riesgos y oportunidades y (b) cómo **integrarlas e implementarlas** en los procesos del SGIA y cómo **evaluar su eficacia**.
 
@@ -233,10 +233,10 @@ Información documentada exigida: **conservar información documentada sobre las
 
 ##### 6.1.2 Evaluación del riesgo de la IA
 
-La organización debe **definir y establecer un proceso de evaluación del riesgo de la IA** que:
+Requisito central: la organización debe contar con un **proceso de evaluación del riesgo de la IA** definido y establecido, con estas características:
 
-- a) se base y alinee con la **política de IA** (5.2) y los **objetivos de la IA** (6.2);
-- b) esté diseñado para que las evaluaciones repetidas produzcan resultados **coherentes, válidos y comparables**;
+- a) fundamentado en la **política de IA** (5.2) y alineado con los **objetivos de la IA** (6.2);
+- b) diseñado para que las evaluaciones repetidas den resultados **coherentes, válidos y comparables**;
 - c) **identifique** los riesgos que ayudan o impiden lograr los objetivos de la IA;
 - d) **analice** los riesgos para: (1) evaluar las posibles **consecuencias para la organización, las personas y la sociedad** si se materializan; (2) evaluar, en su caso, la **probabilidad realista**; (3) determinar los **niveles de riesgo**;
 - e) **evalúe** los riesgos para: (1) compararlos con los **criterios de riesgo** (6.1.1); (2) **priorizarlos** para su tratamiento.
@@ -285,8 +285,8 @@ Información documentada exigida: **el resultado de la evaluación del impacto d
 Requisitos:
 
 - Establecer objetivos de la IA para las **funciones y niveles pertinentes**.
-- Los objetivos deben: a) ser coherentes con la política de IA; b) ser **medibles** (si es posible); c) tener en cuenta los requisitos aplicables; d) ser objeto de **seguimiento**; e) **comunicarse**; f) **actualizarse** según corresponda; g) estar disponibles como **información documentada**.
-- Al planificar cómo lograrlos, determinar: **qué** se va a hacer; **qué recursos** se requerirán; **quién** será responsable; **cuándo** se finalizará; **cómo** se evaluarán los resultados.
+- Siete características exigidas a los objetivos [a) a g)]: coherencia con la política de IA; **medibilidad** cuando sea factible; consideración de los requisitos aplicables; **seguimiento**; **comunicación**; **actualización** cuando proceda; disponibilidad como **información documentada**.
+- La planificación para alcanzarlos debe responder a cinco preguntas: **qué** acciones se emprenderán, **qué recursos** harán falta, **quién** será responsable, **cuándo** se completarán y **cómo** se evaluarán los resultados.
 
 Remisiones: el anexo C lista objetivos de la IA relativos a la gestión del riesgo (no exhaustivo); los controles **A.6.1** y **A.9.3** y la guía **B.6.1** y **B.9.3** tratan los objetivos de desarrollo y uso responsables.
 

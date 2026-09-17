@@ -1,0 +1,34 @@
+schema: spec-driven
+
+context: |
+  Idioma: español para todos los artefactos; encabezados estructurales de OpenSpec y palabras clave SHALL/MUST/WHEN/THEN en inglés. Identificadores de código, entidades y enumeraciones en inglés.
+  Producto: plataforma SaaS multi-tenant para implementar, operar y auditar un Sistema de Gestión de IA (SGIA/AIMS) ISO/IEC 42001. Es un sistema operativo de gobernanza de IA, no una lista de verificación.
+  Fuentes de verdad (mayor a menor): resumenes/ (normas parafraseadas) > docs/product/MASTER_ISO42001_PLATFORM_REQUIREMENTS.md + docs/product/PROMPT_REVIEW_AND_ADJUSTMENTS.md > brief y PRD BMAD (_bmad-output/planning-artifacts) > docs/architecture + docs/decisions (ADRs) > openspec/ > código > pruebas. El código nunca sobreescribe la especificación en silencio.
+  Stack (ADR-001): TypeScript estricto, Next.js App Router, React, Tailwind, shadcn/ui, PostgreSQL + Prisma, Zod, pg-boss, OpenTelemetry, Vitest, Playwright, Docker, GitHub Actions. Monolito modular por bounded contexts con eventos de dominio y outbox.
+  Multi-tenencia: tenant_id en toda tabla de negocio y Row Level Security. Toda entidad importante lleva id, tenant_id, created_at/by, updated_at/by, status, version, deleted_at.
+  Seguridad: secretos solo vía gestor de secretos; nunca en columnas normales ni en el frontend. Validación Zod en toda entrada. Registro de auditoría append-only con cadena de hashes para toda decisión de cumplimiento.
+  Dominio: nunca inventar requisitos, identificadores de cláusula o control ni texto normativo (usar SOURCE_DETAIL_REQUIRED). Distinguir normative_requirement, implementation_guidance, recommended_practice, organizational_decision, product_requirement, technical_design_decision. Anexo A = 38 controles (A.2:3, A.3:2, A.4:5, A.5:4, A.6:9, A.7:5, A.8:4, A.9:3, A.10:3). La SoA gobierna los flujos: un control no aplicable no genera tareas ni evidencia recurrente pero permanece visible y auditable. La IA sugiere, una persona autorizada aprueba. La plataforma nunca declara "certificado ISO".
+  Cada cambio incluye pruebas (unitarias, integración, E2E o seguridad según aplique), mantiene trazabilidad requisito → control → riesgo → sistema de IA → evidencia → auditoría → hallazgo → CAPA, y actualiza docs/compliance/TRACEABILITY_MATRIX.md al archivarse.
+  UI bilingüe ES/EN desde la fundación; terminología oficial en resumenes/13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md.
+
+rules:
+  proposal:
+    - Incluir siempre las secciones "Fuera de alcance" y "Requisitos de producto cubiertos (IDs PR-xxx del análisis de requisitos)".
+    - Indicar qué cláusulas o controles ISO/IEC 42001 toca el cambio, citando el archivo de resumenes/ correspondiente.
+  specs:
+    - Un requisito por bloque "### Requirement:" con al menos un "#### Scenario:" verificable (WHEN / THEN / AND).
+    - Describir comportamiento observable, no detalles de implementación.
+  design:
+    - Cubrir dominios afectados, modelo de datos, API, eventos, autorización, UI, migración, pruebas, observabilidad y seguridad; omitir explícitamente los que no apliquen.
+  tasks:
+    - Tareas pequeñas, ordenadas, verificables de forma independiente y agrupadas por capa (datos, dominio, API, UI, pruebas).
+    - Ninguna tarea se marca [x] sin pruebas, lint y typecheck en verde.
+
+operations:
+  apply:
+    guidance:
+      - Leer solo el PRD y los documentos de arquitectura necesarios; no cargar el prompt maestro completo.
+      - Ejecutar pruebas tras cada grupo de tareas y reportar la salida real.
+  archive:
+    guidance:
+      - Actualizar docs/compliance/TRACEABILITY_MATRIX.md y resumir el resultado antes de cerrar.

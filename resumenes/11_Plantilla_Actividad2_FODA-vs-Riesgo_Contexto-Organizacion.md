@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Plantillas – Análisis de Riesgo SGIA, FODA vs Riesgo y Stakeholders)"
 palabras_clave: [contexto de la organización, cuestiones internas y externas, FODA, DAFO, SWOT, fortalezas, debilidades, oportunidades, amenazas, riesgos positivos, riesgos negativos, priorización, probabilidad, impacto, matriz 3x3, tratamiento del riesgo, seguimiento, ISO/IEC 42001 4.1, 6.1.1, 9.1]
-documentos_relacionados_en_corpus: [10_Plantilla_Analisis-de-Riesgo-SGIA.md, 12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "12_Plantilla_Actividad3_Stakeholders_Partes-Interesadas.md"]
 ---
 
 ## 1. Resumen ejecutivo

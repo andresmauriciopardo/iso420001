@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Plantillas – Análisis de Riesgo SGIA, FODA vs Riesgo y Stakeholders)"
 palabras_clave: [partes interesadas, stakeholders, grupos de interés internos y externos, poder, interés, influencia, matriz poder-interés, mantener satisfecho, principal stakeholder, mínimo esfuerzo, mantener informados, requerimientos, satisfacción, ANPDP, OEFA, ISO/IEC 42001 4.2, 7.4]
-documentos_relacionados_en_corpus: [10_Plantilla_Analisis-de-Riesgo-SGIA.md, 11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md", "11_Plantilla_Actividad2_FODA-vs-Riesgo_Contexto-Organizacion.md"]
 ---
 
 ## 1. Resumen ejecutivo

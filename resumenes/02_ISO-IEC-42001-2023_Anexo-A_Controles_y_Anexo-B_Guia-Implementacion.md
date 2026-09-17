@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de Controles – ISO/IEC 42001 Anexos A y B)"
 palabras_clave: [ISO/IEC 42001, Anexo A, Anexo B, controles de referencia, objetivos de control, declaración de aplicabilidad, tratamiento del riesgo de la IA, política de IA, evaluación del impacto del sistema de IA, ciclo de vida del sistema de IA, datos para sistemas de IA, uso responsable de la IA, proveedores, clientes, supervisión humana, registros de eventos, SGIA, AIMS]
-documentos_relacionados_en_corpus: ["01_ISO-IEC-42001-2023_Clausulas-4-10.md (resumen del mismo PDF, cláusulas 4 a 10)", "03_ISO-IEC-42001-2023_Anexo-C_Objetivos-y-fuentes-de-riesgo_y_Anexo-D_Dominios-y-sectores.md (resumen del mismo PDF, Anexos C y D)", "resumen de ISO/IEC 23894:2023 (gestión del riesgo de la IA)", "resumen de la Guía para la Implementación ISO/IEC 42001 de Impulsa360 Academy", "resumen de la plantilla Declaración de Aplicabilidad 42001 (SOA v2)", "resumen de la plantilla Análisis de Riesgo SGIA v.03", "resumen de la plantilla Diagnóstico ISO 42001 – Análisis de Brechas", "resumen de ISO 19011 (directrices para la auditoría de sistemas de gestión)"]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "03_ISO-IEC-42001-2023_Anexos-C-D_Objetivos-Fuentes-de-Riesgo-y-Sectores.md", "13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "08_Plantilla_Diagnostico-Analisis-de-Brechas-ISO42001.md", "09_Plantilla_Declaracion-de-Aplicabilidad-SOA-ISO42001.md", "10_Plantilla_Analisis-de-Riesgo-SGIA.md"]
 ---
 
 ## 1. Resumen ejecutivo
@@ -109,7 +109,7 @@ Objetivo (B.2.1): proporcionar dirección y apoyo de la dirección para los sist
 (a) **Control**: la organización debe determinar cuándo otras políticas pueden aplicarse a sus objetivos respecto a los sistemas de IA, o verse afectadas por ellos.
 
 (b) **Orientación B.2.3**:
-- Muchos dominios se entrecruzan con la IA: calidad, seguridad (*safety*), protección (*security*) y privacidad.
+- Muchos dominios se entrecruzan con la IA: calidad, seguridad (*security*), protección (*safety*) y privacidad.
 - La organización debería realizar un análisis exhaustivo para determinar si las políticas actuales se entrecruzan y en qué aspectos, y o bien actualizarlas o bien incluir disposiciones al respecto en la política de IA.
 
 (c) **Otra información**: la política de IA debería fundamentarse en las políticas que establezca el órgano de gobierno. **ISO/IEC 38507** proporciona orientación a los miembros del órgano de gobierno para posibilitar y gobernar el uso de IA durante todo su ciclo de vida.
@@ -140,7 +140,7 @@ Objetivo (B.3.1): establecer la rendición de cuentas dentro de la organización
 (b) **Orientación B.3.2**:
 - La definición de roles es crucial para la rendición de cuentas durante todo el ciclo de vida.
 - Al asignarlos, considerar las políticas de IA, los objetivos de IA y los riesgos identificados para cubrir todas las áreas pertinentes; se puede priorizar.
-- Áreas que pueden requerir roles definidos: gestión del riesgo; evaluaciones del impacto del sistema de IA; gestión de activos y recursos; seguridad (*safety*); protección (*security*); privacidad; desarrollo; rendimiento; supervisión humana; relaciones con proveedores; demostración de la capacidad de cumplir los requisitos legales de forma consistente; gestión de la calidad de los datos en todo el ciclo de vida.
+- Áreas que pueden requerir roles definidos: gestión del riesgo; evaluaciones del impacto del sistema de IA; gestión de activos y recursos; seguridad (*security*); protección (*safety*); privacidad; desarrollo; rendimiento; supervisión humana; relaciones con proveedores; demostración de la capacidad de cumplir los requisitos legales de forma consistente; gestión de la calidad de los datos en todo el ciclo de vida.
 - Las responsabilidades deberían definirse hasta el nivel de detalle necesario para que las personas desempeñen sus funciones.
 
 (c) **Otra información**: no aplica; se relaciona con la cláusula 5.3.
@@ -230,7 +230,7 @@ Objetivo (B.4.1): asegurar que la organización contabiliza los recursos del sis
 
 #### A.4.6 Recursos humanos
 
-(a) **Control**: documentar información sobre los recursos humanos y sus competencias utilizados para el desarrollo, despliegue, operación, gestión de cambios, mantenimiento, transferencia y retirada del servicio, así como la verificación e integración del sistema de IA.
+(a) **Control**: documentar los recursos humanos y las competencias que intervienen en todas las etapas del sistema de IA (desarrollo, despliegue, operación, gestión de cambios, mantenimiento, transferencia y retirada del servicio, además de la verificación e integración).
 
 (b) **Orientación B.4.6**:
 - Considerar la necesidad de conocimientos y experiencia diversos e incluir los tipos de roles necesarios; por ejemplo, incluir grupos demográficos específicos relacionados con los conjuntos de datos de entrenamiento si es un componente necesario del diseño.
@@ -408,7 +408,7 @@ Objetivo (B.6.2.1): definir los criterios y requisitos para cada etapa del ciclo
 
 #### A.6.2.6 Operación y seguimiento del sistema de IA
 
-(a) **Control**: definir y documentar los elementos necesarios para la operación continuada del sistema de IA; como mínimo, esto debería incluir el seguimiento del sistema y del rendimiento, las reparaciones, las actualizaciones y el soporte. (El enunciado combina "debe" para la obligación y "debería" para el contenido mínimo, igual que el original inglés.)
+(a) **Control**: definir y documentar lo necesario para mantener el sistema de IA en operación; el contenido mínimo recomendado abarca el seguimiento del sistema y de su rendimiento, las reparaciones, las actualizaciones y el soporte. (El enunciado combina "debe" para la obligación y "debería" para el contenido mínimo, igual que el original inglés.)
 
 (b) **Orientación B.6.2.6**:
 - **Seguimiento del sistema y del rendimiento**: errores y fallos generales; comportamiento esperado con datos de producción; criterios técnicos (tasas de éxito en resolución de problemas o finalización de tareas, índices de confianza); cumplimiento de compromisos con partes interesadas, requisitos del cliente y requisitos legales.

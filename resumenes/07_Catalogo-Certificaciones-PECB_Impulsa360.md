@@ -10,7 +10,7 @@ version_resumen: "1.0"
 fecha_resumen: "2026-09-17"
 generado_por: "Claude (agente Analista de material didáctico – Impulsa360 Academy)"
 palabras_clave: [PECB, catálogo, certificaciones, ISO/IEC 42001 Foundation, Lead Implementer, Lead Auditor, Lead AI Risk Manager, CAIP, CAIM, ISO/IEC 27001, ISO/IEC 27701, ISO 22301, ISO 31000, ISO 37001, ISO 37301, ISO/IEC 38500, MS Internal Auditor, ISO 19011, ISO 17021, ruta formativa, Impulsa360]
-documentos_relacionados_en_corpus: ["06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md"]
+documentos_relacionados_en_corpus: ["00_INDICE.md", "06_Guia-Implementacion-Inicial-ISO42001_Impulsa360.md", "01_ISO-IEC-42001-2023_Requisitos_Clausulas-4-10.md", "02_ISO-IEC-42001-2023_Anexo-A_Controles_y_Anexo-B_Guia-Implementacion.md", "04_ISO-IEC-23894-2023_Gestion-de-Riesgos-de-IA.md", "05_ISO-19011-2026_Directrices-Auditoria-Sistemas-de-Gestion.md", "13_Glosario-Bilingue-ES-EN_ISO42001_y_Nota-Version-Inglesa.md"]
 ---
 
 ## 1. Resumen ejecutivo
